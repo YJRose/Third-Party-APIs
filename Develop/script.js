@@ -26,7 +26,21 @@ saveButton0.addEventListener('click',function savedescription(){
   var textE9 = document.getElementById("text9");
   textE9 = text9.value.trim();
   localStorage.setItem("text9", JSON.stringify(textE9));
-  updatecolorcode();
+  var currenthour = dayjs().format("HH");
+  currenthour = parseInt(currenthour);
+  if (currenthour - 9 == 0){
+
+    $('#hour-9').css("background-color", "#ff6961");
+  
+  }else if(currenthour - 9 <= 0) {
+  
+    $('#hour-9').css("backgroud-color", "#77dd77");
+  
+  }else{
+  
+    $('#hour-9').css("backgroud-color", "#d3d3d3");
+  
+  }
 });
 
 saveButton1.addEventListener('click',function savedescription(){
@@ -34,23 +48,51 @@ saveButton1.addEventListener('click',function savedescription(){
   var textE10 = document.getElementById("text10");
   textE10 = text10.value.trim();
   localStorage.setItem("text10", JSON.stringify(textE10));
-  updatecolorcode();
+  test();
 });
+
 
 saveButton2.addEventListener('click',function savedescription(){
 
   var textE11 = document.getElementById("text11");
   textE11 = text11.value.trim();
   localStorage.setItem("text11", JSON.stringify(textE11));
-  updatecolorcode();
-});
+  var currenthour = dayjs().format("HH");
+  currenthour = parseInt(currenthour);
+  if (currenthour - 11 == 0){
+
+    $('#hour-11').css("background-color", "#ff6961");
+  
+  }else if(currenthour - 11 <= 0) {
+  
+    $('#hour-11').css("backgroud-color", "#77dd77");
+  
+  }else{
+  
+    $('#hour-11').css("backgroud-color", "#d3d3d3");
+  
+  }});
 
 saveButton3.addEventListener('click',function savedescription(){
 
   var textE12 = document.getElementById("text12");
   textE12 = text11.value.trim();
   localStorage.setItem("text12", JSON.stringify(textE12));
-  updatecolorcode();
+  var currenthour = dayjs().format("HH");
+  currenthour = parseInt(currenthour);
+  if (currenthour - 12 == 0){
+
+    $('#hour-12').css("background-color", "#ff6961");
+  
+  }else if(currenthour - 12 <= 0) {
+  
+    $('#hour-12').css("backgroud-color", "#77dd77");
+  
+  }else{
+  
+    $('#hour-12').css("backgroud-color", "#d3d3d3");
+  
+  }
 });
 
 saveButton4.addEventListener('click',function savedescription(){
@@ -58,7 +100,7 @@ saveButton4.addEventListener('click',function savedescription(){
   var textE13 = document.getElementById("text13");
   textE13 = text13.value.trim();
   localStorage.setItem("text13", JSON.stringify(textE13));
-  updatecolorcode();
+
 });
 
 saveButton5.addEventListener('click',function savedescription(){
@@ -66,7 +108,7 @@ saveButton5.addEventListener('click',function savedescription(){
   var textE14 = document.getElementById("text14");
   textE14 = text14.value.trim();
   localStorage.setItem("text14", JSON.stringify(textE14));
-  updatecolorcode();
+
 });
 
 saveButton6.addEventListener('click',function savedescription(){
@@ -74,7 +116,21 @@ saveButton6.addEventListener('click',function savedescription(){
   var textE15 = document.getElementById("text15");
   textE15 = text15.value.trim();
   localStorage.setItem("text15", JSON.stringify(textE15));
-  updatecolorcode();
+  var currenthour = dayjs().format("HH");
+  currenthour = parseInt(currenthour);
+  if (currenthour - 15 == 0){
+
+    $('#hour-15').css("background-color", "#ff6961");
+  
+  }else if(currenthour - 15 <= 0) {
+  
+    $('#hour-15').css("backgroud-color", "#77dd77");
+  
+  }else{
+  
+    $('#hour-15').css("backgroud-color", "#d3d3d3");
+  
+  }
 });
 
 saveButton7.addEventListener('click',function savedescription(){
@@ -82,7 +138,21 @@ saveButton7.addEventListener('click',function savedescription(){
   var textE16 = document.getElementById("text16");
   textE16 = text16.value.trim();
   localStorage.setItem("text16", JSON.stringify(textE16));
-  updatecolorcode();
+  var currenthour = dayjs().format("HH");
+  currenthour = parseInt(currenthour);
+  if (currenthour - 16 == 0){
+
+    $('#hour-16').css("background-color", "#ff6961");
+  
+  }else if(currenthour - 16 <= 0) {
+  
+    $('#hour-16').css("backgroud-color", "#77dd77");
+  
+  }else{
+  
+    $('#hour-16').css("backgroud-color", "#d3d3d3");
+  
+  }
 });
 
 saveButton8.addEventListener('click',function savedescription(){
@@ -90,29 +160,42 @@ saveButton8.addEventListener('click',function savedescription(){
   var textE17 = document.getElementById("text17");
   textE17 = text17.value.trim();
   localStorage.setItem("text17", JSON.stringify(textE17));
-  updatecolorcode();
+  var currenthour = dayjs().format("HH");
+  currenthour = parseInt(currenthour);
+  if (currenthour - 17 == 0){
+
+    $('#hour-17').css("background-color", "#ff6961");
+  
+  }else if(currenthour - 17 <= 0) {
+  
+    $('#hour-17').css("backgroud-color", "#77dd77");
+  
+  }else{
+  
+    $('#hour-17').css("backgroud-color", "#d3d3d3");
+  
+  }
 });
 
-function updatecolorcode(){
-var currenthour = dayjs().format("HH");
-currenthour = parseInt(currenthour);
-for (var i = 9; i <= 17; i++)
-if(currenthour - i == 0){
+function test(){
+  var currenthour = dayjs().format("HH");
+  currenthour = parseInt(currenthour);
+  if (currenthour - 13 == 0){
+  
+    $('#hour-14').css("background-color", "#ff6961");
+  
+  }else if(currenthour - 13 > 0) {
+  
+    $('#hour-14').css("backgroud-color", "blue");
+  
+  }else{
+  
+    $('#hour-14').css("backgroud-color", "#d3d3d3");
+  
+  }};
+  
+  test();
 
-  $('#hour-'&& i).css("background-color", "#ff6961");
-
-}else if(currenthour - i <= 0) {
-
-  $('#hour-'&& i).css("backgroud-color", "#77dd77");
-
-}else{
-
-  $('#hour-'&& i).css("backgroud-color", "#d3d3d3");
-
-}
-};
-
-updatecolorcode();
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
