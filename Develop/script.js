@@ -26,7 +26,11 @@ saveButton0.addEventListener('click',function savedescription(){
   var textE9 = document.getElementById("text9");
   textE9 = text9.value.trim();
   localStorage.setItem("text9", JSON.stringify(textE9));
+  //get data from localstorage and show in the description
+  var lasttextE9 = localStorage.getItem("text9");
+  document.getElementById("text9").innerHTML = lasttextE9;
 
+  saveMessage();
 });
 
 saveButton1.addEventListener('click',function savedescription(){
@@ -34,7 +38,11 @@ saveButton1.addEventListener('click',function savedescription(){
   var textE10 = document.getElementById("text10");
   textE10 = text10.value.trim();
   localStorage.setItem("text10", JSON.stringify(textE10));
+  //get data from localstorage and show in the description
+  var lasttextE10 = localStorage.getItem("text10");
+  document.getElementById("text10").innerHTML = lasttextE10;
 
+  saveMessage();
 });
 
 
@@ -43,6 +51,11 @@ saveButton2.addEventListener('click',function savedescription(){
   var textE11 = document.getElementById("text11");
   textE11 = text11.value.trim();
   localStorage.setItem("text11", JSON.stringify(textE11));
+  //get data from localstorage and show in the description
+  var lasttextE11 = localStorage.getItem("text11");
+  document.getElementById("text11").innerHTML = lasttextE11;
+
+  saveMessage();
 });
 
 saveButton3.addEventListener('click',function savedescription(){
@@ -50,7 +63,11 @@ saveButton3.addEventListener('click',function savedescription(){
   var textE12 = document.getElementById("text12");
   textE12 = text11.value.trim();
   localStorage.setItem("text12", JSON.stringify(textE12));
+  //get data from localstorage and show in the description
+  var lasttextE12 = localStorage.getItem("text12");
+  document.getElementById("text12").innerHTML = lasttextE12;
 
+  saveMessage();
 });
 
 saveButton4.addEventListener('click',function savedescription(){
@@ -58,7 +75,11 @@ saveButton4.addEventListener('click',function savedescription(){
   var textE13 = document.getElementById("text13");
   textE13 = text13.value.trim();
   localStorage.setItem("text13", JSON.stringify(textE13));
+  //get data from localstorage and show in the description
+  var lasttextE13 = localStorage.getItem("text13");
+  document.getElementById("text13").innerHTML = lasttextE13;
 
+  saveMessage();
 });
 
 saveButton5.addEventListener('click',function savedescription(){
@@ -66,7 +87,11 @@ saveButton5.addEventListener('click',function savedescription(){
   var textE14 = document.getElementById("text14");
   textE14 = text14.value.trim();
   localStorage.setItem("text14", JSON.stringify(textE14));
+  //get data from localstorage and show in the description
+  var lasttextE14 = localStorage.getItem("text14");
+  document.getElementById("text14").innerHTML = lasttextE14;
 
+  saveMessage();
 });
 
 saveButton6.addEventListener('click',function savedescription(){
@@ -74,7 +99,11 @@ saveButton6.addEventListener('click',function savedescription(){
   var textE15 = document.getElementById("text15");
   textE15 = text15.value.trim();
   localStorage.setItem("text15", JSON.stringify(textE15));
+  //get data from localstorage and show in the description
+  var lasttextE15 = localStorage.getItem("text15");
+  document.getElementById("text15").innerHTML = lasttextE15;
 
+  saveMessage();
 });
 
 saveButton7.addEventListener('click',function savedescription(){
@@ -82,7 +111,11 @@ saveButton7.addEventListener('click',function savedescription(){
   var textE16 = document.getElementById("text16");
   textE16 = text16.value.trim();
   localStorage.setItem("text16", JSON.stringify(textE16));
-
+  //get data from localstorage and show in the description
+  var lasttextE16 = localStorage.getItem("text16");
+  document.getElementById("text16").innerHTML = lasttextE16;
+  
+  saveMessage();
 });
 
 saveButton8.addEventListener('click',function savedescription(){
@@ -90,8 +123,11 @@ saveButton8.addEventListener('click',function savedescription(){
   var textE17 = document.getElementById("text17");
   textE17 = text17.value.trim();
   localStorage.setItem("text17", JSON.stringify(textE17));
- 
-
+  //get data from localstorage and show in the description
+  var lasttextE17 = localStorage.getItem("text17");
+  document.getElementById("text17").innerHTML = lasttextE17;
+  
+  saveMessage();
 });
 
 //update time block color
@@ -111,14 +147,16 @@ function colorcodeupdate(){
   
 };
   
+//get message shown data saved after click save button
+function saveMessage(){
+  var hr = document.createElement("hr");
+  document.querySelector("header").appendChild(hr);
+  var savetext = document.createElement("p");
+  savetext.textContent = "Message saved!";
+  document.querySelector("header").appendChild(savetext);
+};
+
 colorcodeupdate();
 
 
-// get data from localstorage
-function append(){
-var textE9L = localStorage.getElementById("text9");
-document.querySelector("#text9").innerHTML = textE9L;
-
-};
-append();
 
